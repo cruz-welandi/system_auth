@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function Sign_in (){
 
     return (
-        <body className="flex justify-center items-center p-7">
+        <div className="flex justify-center items-center p-7">
             <div className=" flex flex-col gap-y-10 p-5 px-10">
                 <div className="flex flex-col gap-y-6">
                     <div className="p-4 bg-[#e0e7ff] w-14 rounded-lg text-[#4338ca] font-bold">
@@ -53,7 +53,7 @@ function Sign_in (){
             <div className="bg-[#4338ca]">
 
             </div>
-        </body>
+        </div>
     )
 }
 
