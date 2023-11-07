@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Img1 from "./image1.png"
+import Img1 from "../assets/image1.png"
 
 function Sign_in (){
 
