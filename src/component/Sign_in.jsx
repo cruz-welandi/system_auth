@@ -44,7 +44,7 @@ function Sign_in (){
                     </button>
                 </form>
 
-                <div className="flex gap-x-3">
+                <div className="flex gap-x-3 mt-2.5">
                     Vous n'avez pas un compte? 
                     <Link to={'/Sign-up'} className="text-[#4338ca]">
                         Créer un compte c'est gratuit
@@ -54,8 +54,8 @@ function Sign_in (){
             <div className="bg-[#4338ca] w-1/2 flex flex-col gap-y-20">
                 <img src={Img1}/>
                 <div className=" flex flex-col gap-y-4 pl-28 pr-52">
-                    <h1 className="text-[#f1f5f9] text-sm">
-                        ECOLE241.BUSINESS
+                    <h1 className="text-[#f1f5f9] text-xs">
+                        ECOLE 241.BUSINESS
                     </h1>
                     <p className="text-xl text-white ">
                         Etudier en ligne devient plus facile - vous pouvez toujours étudier avec Ecole 241 Businnes
