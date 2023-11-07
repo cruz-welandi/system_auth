@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Img1 from "./image1.png"
 
 function Sign_in (){
 
@@ -38,7 +39,7 @@ function Sign_in (){
                         <label className="font-bold">Se souvenir de moi</label>
                     </div>
 
-                    <button className="bg-[#4338ca] p-4 rounded-lg text-white font-bold">
+                    <button className="bg-[#4338ca] p-4 rounded-lg text-white font-bold drop-shadow-2xl">
                         Connexion
                     </button>
                 </form>
@@ -50,8 +51,16 @@ function Sign_in (){
                     </Link>
                 </div>
             </div>
-            <div className="bg-[#4338ca] w-1/2">
-
+            <div className="bg-[#4338ca] w-1/2 flex flex-col gap-y-20">
+                <img src={Img1}/>
+                <div className=" flex flex-col gap-y-4 pl-28 pr-52">
+                    <h1 className="text-[#f1f5f9] text-sm">
+                        ECOLE241.BUSINESS
+                    </h1>
+                    <p className="text-xl text-white ">
+                        Etudier en ligne devient plus facile - vous pouvez toujours étudier avec Ecole 241 Businnes
+                    </p>
+                </div>
             </div>
         </div>
     )
