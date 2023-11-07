@@ -29,7 +29,7 @@ function Sign_in (){
                     <div className="flex flex-col gap-y-2">
                         <label className="font-bold flex justify-between">
                             Mot de passe
-                            <Link to={'./Forgot_your_password'} className="text-[#4338ca]">Mot de passe oublié</Link>
+                            <Link to={'/Forgot-your-password'} className="text-[#4338ca]">Mot de passe oublié</Link>
                         </label>
                         <input type="password" className="bg-[#e5e7eb] h-[50px] rounded-lg"/>
                     </div>
@@ -45,7 +45,7 @@ function Sign_in (){
 
                 <div className="flex gap-x-3">
                     Vous n'avez pas un compte? 
-                    <Link to={'./Sign_up'} className="text-[#4338ca]">
+                    <Link to={'/Sign-up'} className="text-[#4338ca]">
                         Créer un compte c'est gratuit
                     </Link>
                 </div>
