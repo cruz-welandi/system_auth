@@ -11,7 +11,7 @@ function Forgot_your_password (){
                         <div className="p-4 bg-[#e0e7ff] w-14 rounded-lg text-[#4338ca] font-bold">
                             E41
                         </div>
-                        <div className="flex flex-col gap-y-3">
+                        <div className="flex flex-col gap-y-4">
                             <h1 className="text-3xl font-bold">
                                 Mot de passe oublié
                             </h1>
