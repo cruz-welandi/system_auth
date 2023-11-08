@@ -53,12 +53,12 @@ function Sign_in (){
             </div>
             <div className="bg-[#4338ca] w-1/2 flex flex-col gap-y-20">
                 <img src={Img1}/>
-                <div className=" flex flex-col gap-y-4 pl-28 pr-52">
+                <div className=" flex flex-col gap-y-4 pl-28 ">
                     <h1 className="text-[#f1f5f9] text-xs">
                         ECOLE 241.BUSINESS
                     </h1>
-                    <p className="text-xl text-white ">
-                        Etudier en ligne devient plus facile - vous pouvez toujours étudier avec Ecole 241 Businnes
+                    <p className="text-2xl text-white ">
+                        Etudier en ligne devient plus facile - <br/>vous pouvez toujours étudier avec Ecole <br/> 241 Businnes
                     </p>
                 </div>
             </div>

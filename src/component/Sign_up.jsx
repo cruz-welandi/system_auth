@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import Img2 from "../assets/image2.png";
+import Img3 from "../assets/image3.png";
 
 function Sign_up (){
 
@@ -60,9 +62,19 @@ function Sign_up (){
                             <Link to={'/Sign-in'} className="text-[#4338ca]">Connetez vous</Link>
                     </div>
                 </div>
-                <div className="w-1/2">
-                    <div></div>
-                    <div></div>
+                <div className="bg-[#4338ca] w-1/2 flex flex-col gap-y-20">
+                    <div>
+                        <img src={Img2}/>
+                        <img src={Img3} className="absolute top-24 right-[270px]"/>
+                    </div>
+                    <div className=" flex flex-col gap-y-4 pl-16">
+                        <h1 className="text-[#f1f5f9] text-xs">
+                            ECOLE 241.BUSINESS
+                        </h1>
+                        <p className="text-2xl text-white ">
+                            Etudier en ligne devient plus facile - <br/>vous pouvez toujours étudier avec Ecole <br/> 241 Businnes
+                        </p>
+                    </div>
                 </div>
             </div>
         </>
