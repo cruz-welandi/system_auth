@@ -31,12 +31,12 @@ function Forgot_your_password (){
                             Confirmer
                         </button>
                     </form>
-                    <div className="flex justify-center gap-x-2">
+                    <div className="flex justify-center gap-x-2 ">
                         Je me souviens de mon mot de passe ? 
                         <Link to={'/sign-in'} className="text-[#4338ca]">Connexion</Link>
                     </div>
                 </div>
-                <div className="bg-[#4338ca] w-1/2 flex flex-col gap-y-20">
+                <div className="bg-[#4338ca] w-1/2 flex flex-col gap-y-16 pt-24">
                     <div>
                         <img src={Img3}/>
                     </div>

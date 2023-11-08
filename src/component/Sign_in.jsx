@@ -51,7 +51,7 @@ function Sign_in (){
                     </Link>
                 </div>
             </div>
-            <div className="bg-[#4338ca] w-1/2 flex flex-col gap-y-20">
+            <div className="bg-[#4338ca] w-1/2 flex flex-col gap-y-16 pt-24">
                 <img src={Img1}/>
                 <div className=" flex flex-col gap-y-4 pl-28 ">
                     <h1 className="text-[#f1f5f9] text-xs">

@@ -62,10 +62,10 @@ function Sign_up (){
                             <Link to={'/Sign-in'} className="text-[#4338ca]">Connetez vous</Link>
                     </div>
                 </div>
-                <div className="bg-[#4338ca] w-1/2 flex flex-col gap-y-20">
+                <div className="bg-[#4338ca] w-1/2 flex flex-col gap-y-16 pt-24">
                     <div>
                         <img src={Img2}/>
-                        <img src={Img3} className="absolute top-24 right-[270px]"/>
+                        <img src={Img3} className="absolute top-[180px] right-[270px]"/>
                     </div>
                     <div className=" flex flex-col gap-y-4 pl-16">
                         <h1 className="text-[#f1f5f9] text-xs">
