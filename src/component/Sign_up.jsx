@@ -8,7 +8,7 @@ function Sign_up (){
         <>
             <div className="flex">
                 <div className="w-1/2 flex flex-col gap-y-5 py-5 px-24 ">
-                    <div className="flex flex-col gap-y-3">
+                    <div className="flex flex-col gap-y-4">
                         <div className="p-4 bg-[#e0e7ff] w-14 rounded-lg text-[#4338ca] font-bold">
                             E41
                         </div>
