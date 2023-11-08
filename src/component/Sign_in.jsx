@@ -35,7 +35,7 @@ function Sign_in (){
                         <input type="password" className="bg-[#e5e7eb] h-[50px] rounded-lg"/>
                     </div>
                     <div className="flex gap-x-8">
-                        <input type="checkbox" className="default:bg-[#e5e7eb] w-5"/>
+                        <input type="checkbox" className="w-5 bg-[#e5e7eb]"/>
                         <label className="font-bold">Se souvenir de moi</label>
                     </div>
 
