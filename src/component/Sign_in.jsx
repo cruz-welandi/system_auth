@@ -25,14 +25,14 @@ function Sign_in (){
                         <label className="font-bold">
                             Email
                         </label>
-                        <input type="email" className="bg-[#e5e7eb] h-[60px] rounded-lg"/>
+                        <input type="email" className="bg-[#e5e7eb] h-[50px] rounded-lg"/>
                     </div>
                     <div className="flex flex-col gap-y-2">
                         <label className="font-bold flex justify-between">
                             Mot de passe
                             <Link to={'/Forgot-your-password'} className="text-[#4338ca]">Mot de passe oublié</Link>
                         </label>
-                        <input type="password" className="bg-[#e5e7eb] h-[60px] rounded-lg"/>
+                        <input type="password" className="bg-[#e5e7eb] h-[50px] rounded-lg"/>
                     </div>
                     <div className="flex gap-x-8">
                         <input type="checkbox" className="default:bg-[#e5e7eb] w-5"/>
