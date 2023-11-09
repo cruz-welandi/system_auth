@@ -7,7 +7,7 @@ function Sign_up (){
     return (
         <>
             <div className="flex h-[100vh]">
-                <div className="w-1/2 flex flex-col px-24 justify-center">
+                <div className="w-1/2 flex flex-col  gap-y-7 px-24 justify-center">
                     <div className="flex flex-col gap-y-4">
                         <div className="p-4 bg-[#e0e7ff] w-14 rounded-lg text-[#4338ca] font-bold">
                             E41
@@ -22,7 +22,7 @@ function Sign_up (){
                         </div>
                     </div>
             
-                    <form className="flex flex-col gap-y-3">
+                    <form className="flex flex-col gap-y-4">
                         <div  className="flex flex-col gap-y-2">
                             <label  className="font-bold">
                                 Nom complet
@@ -57,7 +57,7 @@ function Sign_up (){
                         </button>
 
                     </form>
-                    <div className="flex gap-x-3 justify-center">
+                    <div className="flex gap-x-3 justify-center text-2sm">
                             Vous avez déjà un compte ?
                             <Link to={'/Sign-in'} className="text-[#4338ca]">Connetez vous</Link>
                     </div>

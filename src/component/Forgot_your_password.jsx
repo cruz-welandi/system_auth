@@ -31,7 +31,7 @@ function Forgot_your_password (){
                             Confirmer
                         </button>
                     </form>
-                    <div className="flex justify-center gap-x-2 ">
+                    <div className="flex justify-center gap-x-2 text-2sm">
                         Je me souviens de mon mot de passe ? 
                         <Link to={'/sign-in'} className="text-[#4338ca]">Connexion</Link>
                     </div>
