@@ -5,7 +5,7 @@ function Sign_in (){
 
     return (
         <div className="flex h-[100vh]">
-            <div className=" flex flex-col gap-y-10 p-5 px-28 w-1/2 justify-center">
+            <div className=" flex flex-col gap-y-10 px-28 w-1/2 justify-center">
                 <div className="flex flex-col gap-y-6">
                     <div className="p-4 bg-[#e0e7ff] w-14 rounded-lg text-[#4338ca] font-bold">
                         E41
@@ -25,14 +25,14 @@ function Sign_in (){
                         <label className="font-bold">
                             Email
                         </label>
-                        <input type="email" className="bg-[#e5e7eb] h-[50px] rounded-lg"/>
+                        <input type="email" className="bg-[#e5e7eb] h-[50px] rounded-lg pl-6"/>
                     </div>
                     <div className="flex flex-col gap-y-2">
                         <label className="font-bold flex justify-between">
                             Mot de passe
                             <Link to={'/Forgot-your-password'} className="text-[#4338ca]">Mot de passe oublié</Link>
                         </label>
-                        <input type="password" className="bg-[#e5e7eb] h-[50px] rounded-lg"/>
+                        <input type="password" className="bg-[#e5e7eb] h-[50px] rounded-lg pl-6"/>
                     </div>
                     <div className="flex gap-x-8">
                         <input type="checkbox" className="w-5 bg-[#e5e7eb]"/>
