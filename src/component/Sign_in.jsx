@@ -4,8 +4,8 @@ import Img1 from "../assets/image1.png"
 function Sign_in (){
 
     return (
-        <div className="flex">
-            <div className=" flex flex-col gap-y-10 p-5 px-28 w-1/2">
+        <div className="flex h-[100vh]">
+            <div className=" flex flex-col gap-y-10 p-5 px-28 w-1/2 justify-center">
                 <div className="flex flex-col gap-y-6">
                     <div className="p-4 bg-[#e0e7ff] w-14 rounded-lg text-[#4338ca] font-bold">
                         E41

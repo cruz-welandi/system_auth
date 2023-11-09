@@ -4,8 +4,8 @@ function Reset_password (){
 
     return (
         <>
-            <div  className="flex">
-                <div  className="w-1/2 flex flex-col gap-y-10 p-[75px]">
+            <div  className="flex h-[100vh]">
+                <div  className="w-1/2 flex flex-col gap-y-10 p-[75px] justify-center">
                     <div  className="flex flex-col gap-y-5">
                         <div className="p-4 bg-[#e0e7ff] w-14 rounded-lg text-[#4338ca] font-bold">
                             E41

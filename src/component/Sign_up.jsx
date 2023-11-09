@@ -6,8 +6,8 @@ function Sign_up (){
 
     return (
         <>
-            <div className="flex">
-                <div className="w-1/2 flex flex-col gap-y-5 py-5 px-24 ">
+            <div className="flex h-[100vh]">
+                <div className="w-1/2 flex flex-col gap-y-5  px-24 justify-center">
                     <div className="flex flex-col gap-y-4">
                         <div className="p-4 bg-[#e0e7ff] w-14 rounded-lg text-[#4338ca] font-bold">
                             E41
@@ -28,8 +28,8 @@ function Sign_up (){
                                 Nom complet
                             </label>
                             <div className="flex gap-x-6">
-                                <input type="text" className="bg-[#e5e7eb] h-[50px] w-[250px] rounded-lg pl-6 placeholder:text-black" placeholder="NOM"/>
-                                <input type="text" className="bg-[#e5e7eb] h-[50px]  w-[250px] rounded-lg pl-6 placeholder:text-black" placeholder="PRENOM"/>
+                                <input type="text" className="bg-[#e5e7eb] h-[50px] w-1/2 rounded-lg pl-6 placeholder:text-black" placeholder="NOM"/>
+                                <input type="text" className="bg-[#e5e7eb] h-[50px]  w-1/2 rounded-lg pl-6 placeholder:text-black" placeholder="PRENOM"/>
                             </div>
                         </div>
 
