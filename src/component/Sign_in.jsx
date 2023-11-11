@@ -4,8 +4,10 @@ import Img1 from "../assets/image1.png"
 function Sign_in (){
 
     return (
-        <div className="flex h-[100vh]">
-            <div className=" flex flex-col gap-y-10 px-28 w-1/2 justify-center">
+        <div className="xl:flex lg:flex h-[100vh]
+                        md:flex md:justify-center">
+            <div className=" xl:flex xl:flex-col lg:flex lg:flex-col lg:gap-y-10 xl:gap-y-10 lg:px-20 xl:px-28 xl:w-1/2 lg:w-1/2 xl:justify-center lg:justify-center
+                            md:self-center">
                 <div className="flex flex-col gap-y-6">
                     <div className="p-4 bg-[#e0e7ff] w-14 rounded-lg text-[#4338ca] font-bold">
                         E41
@@ -20,7 +22,8 @@ function Sign_in (){
                     </div>
                 </div>
                 
-                <form className="flex flex-col gap-y-5">
+                <form className="flex flex-col gap-y-5
+                                md:mt-5">
                     <div className="flex flex-col gap-y-2">
                         <label className="font-bold">
                             Email
@@ -44,21 +47,22 @@ function Sign_in (){
                     </button>
                 </form>
 
-                <div className="flex gap-x-3 mt-2.5 justify-center text-2sm">
+                <div className="flex gap-x-3 mt-2.5 justify-center text-2sm
+                                md:mt-14 md:flex md:gap-x-3">
                     Vous n'avez pas un compte? 
                     <Link to={'/Sign-up'} className="text-[#4338ca]">
                         Créer un compte c'est gratuit
                     </Link>
                 </div>
             </div>
-            <div className="bg-[#4338ca] w-1/2 flex flex-col gap-y-16 pt-24">
+            <div className="bg-[#4338ca] w-1/2 flex flex-col gap-y-16 pt-24 hidden xl:block lg:block">
                 <img src={Img1}/>
-                <div className=" flex flex-col gap-y-4 pl-28 ">
+                <div className=" flex flex-col gap-y-4 pl-28 lg:px-14 lg:mt-16">
                     <h1 className="text-[#f1f5f9] text-xs">
                         ECOLE 241.BUSINESS
                     </h1>
                     <p className="text-2xl text-white ">
-                        Etudier en ligne devient plus facile - <br/>vous pouvez toujours étudier avec Ecole <br/> 241 Businnes
+                        Etudier en ligne devient plus facile - <br/>vous pouvez toujours étudier avec Ecole <br className="hidden xl:block"/> 241 Businnes
                     </p>
                 </div>
             </div>

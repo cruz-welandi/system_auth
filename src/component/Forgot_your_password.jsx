@@ -6,7 +6,7 @@ function Forgot_your_password (){
     return (
         <>
            <div className="flex h-[100vh]">
-                <div className="w-1/2 flex flex-col gap-y-10 p-[79px] justify-center">
+                <div className="xl:w-1/2  lg:w-1/2 flex flex-col gap-y-10 p-[79px] justify-center">
                     <div  className="flex flex-col gap-y-5">
                         <div className="p-4 bg-[#e0e7ff] w-14 rounded-lg text-[#4338ca] font-bold">
                             E41
@@ -36,7 +36,7 @@ function Forgot_your_password (){
                         <Link to={'/sign-in'} className="text-[#4338ca]">Connexion</Link>
                     </div>
                 </div>
-                <div className="bg-[#4338ca] w-1/2 flex flex-col gap-y-16 pt-24">
+                <div className="bg-[#4338ca] xl:w-1/2 lg:w-1/2 flex flex-col gap-y-16 pt-24 hidden xl:block lg:block">
                     <div>
                         <img src={Img3}/>
                     </div>
