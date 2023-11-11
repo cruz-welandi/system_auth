@@ -47,7 +47,7 @@ function Sign_in (){
                     </button>
                 </form>
 
-                <div className="flex gap-x-3 mt-2.5 justify-center text-2sm
+                <div className="flex gap-x-3 xl:mt-2.5 lg:mt-2.5 justify-center text-2sm
                                 md:mt-14 md:flex md:gap-x-3">
                     Vous n'avez pas un compte? 
                     <Link to={'/Sign-up'} className="text-[#4338ca]">
