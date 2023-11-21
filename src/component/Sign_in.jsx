@@ -8,7 +8,7 @@ function Sign_in (){
                         md:flex md:justify-center">
             <div className=" xl:flex xl:flex-col lg:flex lg:flex-col lg:gap-y-10 xl:gap-y-10 lg:px-20 xl:px-28 xl:w-1/2 lg:w-1/2 xl:justify-center lg:justify-center
                             md:self-center
-                            flex flex-col gap-y-10 px-10 py-6">
+                            ">
                 <div className="flex flex-col gap-y-6">
                     <div className="p-4 bg-[#e0e7ff] w-14 rounded-lg text-[#4338ca] font-bold">
                         E41
