@@ -6,7 +6,8 @@ function Forgot_your_password (){
     return (
         <>
            <div className="flex h-[100vh]">
-                <div className="xl:w-1/2  lg:w-1/2 flex flex-col gap-y-10 p-[79px] justify-center">
+                <div className="xl:w-1/2  lg:w-1/2 flex flex-col gap-y-10 xl:p-[79px] lg:p-[79px] justify-center
+                                px-10">
                     <div  className="flex flex-col gap-y-5">
                         <div className="p-4 bg-[#e0e7ff] w-14 rounded-lg text-[#4338ca] font-bold">
                             E41
