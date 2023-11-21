@@ -4,7 +4,7 @@ import Img1 from "../assets/image1.png"
 function Sign_in (){
 
     return (
-        <div className="xl:flex lg:flex xl:h-[100vh] lg:h-[100vh]
+        <div className="xl:flex lg:flex xl:h-[100vh] lg:h-[100vh] h-full
                         md:flex md:justify-center">
             <div className=" xl:flex xl:flex-col lg:flex lg:flex-col lg:gap-y-10 xl:gap-y-10 lg:px-20 xl:px-28 xl:w-1/2 lg:w-1/2 xl:justify-center lg:justify-center
                             md:self-center
