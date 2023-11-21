@@ -7,7 +7,8 @@ function Sign_up (){
     return (
         <>
             <div className="flex h-[100vh]">
-                <div className="w-1/2 flex flex-col  gap-y-7 px-24 justify-center">
+                <div className="xl:w-1/2 lg:w-1/2  flex flex-col  xl:gap-y-7 lg:gap-y-7 xl:px-24 lg:px-24 justify-center
+                                px-10 gap-y-3">
                     <div className="flex flex-col gap-y-4">
                         <div className="p-4 bg-[#e0e7ff] w-14 rounded-lg text-[#4338ca] font-bold">
                             E41
@@ -22,7 +23,7 @@ function Sign_up (){
                         </div>
                     </div>
             
-                    <form className="flex flex-col gap-y-4">
+                    <form className="flex flex-col gap-y-3">
                         <div  className="flex flex-col gap-y-2">
                             <label  className="font-bold">
                                 Nom complet
@@ -62,7 +63,7 @@ function Sign_up (){
                             <Link to={'/Sign-in'} className="text-[#4338ca]">Connetez vous</Link>
                     </div>
                 </div>
-                <div className="bg-[#4338ca] w-1/2 flex flex-col gap-y-16 pt-24">
+                <div className="bg-[#4338ca] w-1/2 flex flex-col gap-y-16 pt-24 hidden xl:block lg:block">
                     <div>
                         <img src={Img2}/>
                         <img src={Img3} className="absolute top-[180px] right-[270px]"/>
