@@ -7,8 +7,8 @@ function Sign_up (){
     return (
         <>
             <div className="flex h-[100vh]">
-                <div className="xl:w-1/2 lg:w-1/2  flex flex-col  xl:gap-y-7 lg:gap-y-7 xl:px-24 lg:px-24 justify-center
-                                px-10 gap-y-3">
+                <div className="xl:w-1/2 lg:w-1/2  xl:flex xl:flex-col lg:flex lg:flex-col xl:gap-y-7 lg:gap-y-7 xl:px-24 lg:px-24 xl:justify-center lg:justify-center
+                               flex flex-col px-10 gap-y-5 py-4">
                     <div className="flex flex-col gap-y-4">
                         <div className="p-4 bg-[#e0e7ff] w-14 rounded-lg text-[#4338ca] font-bold">
                             E41
