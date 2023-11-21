@@ -23,7 +23,7 @@ function Sign_up (){
                         </div>
                     </div>
             
-                    <form className="flex flex-col gap-y-3">
+                    <form className="flex flex-col gap-y-2">
                         <div  className="flex flex-col gap-y-2">
                             <label  className="font-bold">
                                 Nom complet
