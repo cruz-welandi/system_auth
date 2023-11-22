@@ -1,8 +1,52 @@
 import { Link } from "react-router-dom";
 import Img2 from "../assets/image2.png";
 import Img3 from "../assets/image3.png";
+import { useCallback, useEffect, useState } from "react";
+import Axios from 'axios';
 
 function Sign_up (){
+
+    const [users, setUsers] = useState({
+        firstname: "",
+        lastname: "",
+        emai: "",
+        password: "",
+       
+    });
+
+
+    const handleInputChange = useCallback(({ target: { name, value } }) => {
+        setUsers((prevData) => ({ ...prevData, [name]: value }));
+      }, []);
+
+      const handleSubmit = async (e) => {
+        e.preventDefault();
+    
+        try {
+            // Envoie les données du formulaire à l'API Strapi
+            const response = await Axios.post('https://auth-user-jqxd.onrender.com/api/list-users', {data: users});
+            console.log('Réponse de l\'API Strapi :', response.data);
+        } catch (error) {
+            if (error.response) {
+              // La requête a été effectuée, mais le serveur a renvoyé une erreur
+              console.error('Réponse du serveur avec erreur:', error.response.data);
+            } else if (error.request) {
+              // La requête n'a pas pu être effectuée
+              console.error('La requête n\'a pas pu être effectuée:', error.request);
+            } else {
+              // Une autre erreur s'est produite
+              console.error('Erreur lors de la requête:', error.message);
+            }
+          };
+
+          setUsers ({
+            firstname : '',
+            lastname : '',
+            email : '',
+            password : '',
+          });
+      };
+
 
     return (
         <>
@@ -23,14 +67,14 @@ function Sign_up (){
                         </div>
                     </div>
             
-                    <form className="flex flex-col gap-y-2">
+                    <form className="flex flex-col gap-y-2" onSubmit={handleSubmit}>
                         <div  className="flex flex-col gap-y-2">
                             <label  className="font-bold">
                                 Nom complet
                             </label>
                             <div className="flex gap-x-6">
-                                <input type="text" className="bg-[#e5e7eb] h-[50px] w-1/2 rounded-lg  pl-6 placeholder:text-black" placeholder="NOM"/>
-                                <input type="text" className="bg-[#e5e7eb] h-[50px]  w-1/2 rounded-lg pl-6 placeholder:text-black" placeholder="PRENOM"/>
+                                <input type="text" className="bg-[#e5e7eb] h-[50px] w-1/2 rounded-lg  pl-6 placeholder:text-black" placeholder="NOM" name="lastname" onChange={handleInputChange} value={users.lastname}/>
+                                <input type="text" className="bg-[#e5e7eb] h-[50px]  w-1/2 rounded-lg pl-6 placeholder:text-black" placeholder="PRENOM" name="firstname" onChange={handleInputChange} value={users.firstname}/>
                             </div>
                         </div>
 
@@ -38,14 +82,14 @@ function Sign_up (){
                             <label className="font-bold">
                                 Email
                             </label>
-                            <input type="email" className="bg-[#e5e7eb] h-[50px] rounded-lg pl-6 placeholder:text-black" placeholder="aurelius@rocketmail.com"/>
+                            <input type="email" className="bg-[#e5e7eb] h-[50px] rounded-lg pl-6 placeholder:text-black" placeholder="aurelius@rocketmail.com" name="email" onChange={handleInputChange} value={users.email}/>
                         </div>
 
                         <div className="flex flex-col gap-y-2">
                             <label className="font-bold">
                                 Mot de passe
                             </label>
-                            <input type="password" className="bg-[#e5e7eb] h-[50px] rounded-lg pl-6 placeholder:text-6xl placeholder:font-blod placeholder:text-black" placeholder=".................."/>
+                            <input type="password" className="bg-[#e5e7eb] h-[50px] rounded-lg pl-6 placeholder:text-6xl placeholder:font-blod placeholder:text-black" placeholder=".................." name="password" onChange={handleInputChange} value={users.password}/>
                         </div>
 
                         <p>
@@ -53,7 +97,7 @@ function Sign_up (){
                             Namanyajugabelajar.io                        
                         </p>
 
-                        <button className="bg-[#4338ca] p-3 rounded-lg text-white font-bold drop-shadow-2xl">
+                        <button className="bg-[#4338ca] p-3 rounded-lg text-white font-bold drop-shadow-2xl" type="submit">
                             S'incrire
                         </button>
 
