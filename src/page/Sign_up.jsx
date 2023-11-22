@@ -3,6 +3,7 @@ import Img2 from "../assets/image2.png";
 import Img3 from "../assets/image3.png";
 import { useCallback, useEffect, useState } from "react";
 import Axios from 'axios';
+import ModalLogin from "../component/ModalLogin";
 
 function Sign_up (){
 
@@ -13,6 +14,8 @@ function Sign_up (){
         password: "",
        
     });
+
+    const [open, setOpen] = useState(false);
 
 
     const handleInputChange = useCallback(({ target: { name, value } }) => {
@@ -26,6 +29,7 @@ function Sign_up (){
             // Envoie les données du formulaire à l'API Strapi
             const response = await Axios.post('https://auth-user-jqxd.onrender.com/api/list-users', {data: users});
             console.log('Réponse de l\'API Strapi :', response.data);
+            setOpen(true);
         } catch (error) {
             if (error.response) {
               // La requête a été effectuée, mais le serveur a renvoyé une erreur
@@ -97,7 +101,7 @@ function Sign_up (){
                             Namanyajugabelajar.io                        
                         </p>
 
-                        <button className="bg-[#4338ca] p-3 rounded-lg text-white font-bold drop-shadow-2xl" type="submit">
+                        <button className="bg-[#4338ca] p-3 rounded-lg text-white font-bold drop-shadow-2xl" type="submit" onClick={open}>
                             S'incrire
                         </button>
 
@@ -122,6 +126,10 @@ function Sign_up (){
                     </div>
                 </div>
             </div>
+            <ModalLogin open={open} close={()=> setOpen(false)}> 
+                    <p className="text-xl mb-5">Félicitations ! Votre inscription a été un succès.</p>
+                    <Link to={'/Sign-in'} className="text-[#4338ca] text-xl font-semibold" onClick={() => setOpen(false)}>Connetez vous</Link>
+            </ModalLogin>
         </>
     )
 }

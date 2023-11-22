@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Sign_in from './component/Sign_in';
-import Sign_up from './component/Sign_up';
-import Forgot_your_password from './component/Forgot_your_password';
-import Reset_password from './component/Reset_password';
+import Sign_in from './page/Sign_in';
+import Sign_up from './page/Sign_up';
+import Forgot_your_password from './page/Forgot_your_password';
+import Reset_password from './page/Reset_password';
 import {
   createBrowserRouter,
   RouterProvider,
