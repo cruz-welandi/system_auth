@@ -14,7 +14,7 @@ import {
 const router = createBrowserRouter ([
   {
     path: "/",
-    element: <Sign_up/>
+    element: <Sign_in/>
   },
   {
     path: "/sign-in",
