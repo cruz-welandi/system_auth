@@ -5,6 +5,7 @@ import Sign_in from './page/Sign_in';
 import Sign_up from './page/Sign_up';
 import Forgot_your_password from './page/Forgot_your_password';
 import Reset_password from './page/Reset_password';
+import Dashboard from './page/Dashboard';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -13,7 +14,7 @@ import {
 const router = createBrowserRouter ([
   {
     path: "/",
-    element: <Sign_in/>
+    element: <Sign_up/>
   },
   {
     path: "/sign-in",
@@ -30,6 +31,10 @@ const router = createBrowserRouter ([
   {
     path: "/reset-password",
     element: <Reset_password/>
+  },
+  {
+    path: "/dashboard",
+    element: <Dashboard/>
   }
 ])
 
