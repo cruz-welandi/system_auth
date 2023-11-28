@@ -22,7 +22,7 @@ function Dashboard (){
                                 </h1>
                             </Link>
 
-                            <Link className="flex flex-row gap-x-3 hover:bg-[#4338ca] w-[250px] py-2 rounded">
+                            <Link className="flex flex-row gap-x-3 hover:bg-[#4338ca] hover:transition hover:duration-700 w-[250px] py-2 rounded">
                                 <div className="border-[3px] rounded-lg border-black"></div>
                                 <FaCar className="text-white text-4xl"/>
                                 <h1 className="text-white self-center font-semibold text-xl">
@@ -30,7 +30,7 @@ function Dashboard (){
                                 </h1>
                             </Link>
 
-                            <Link className="flex flex-row gap-x-3 hover:bg-[#4338ca] w-[250px] py-2 rounded">
+                            <Link className="flex flex-row gap-x-3 hover:bg-[#4338ca]  hover:transition hover:duration-700 w-[250px] py-2 rounded">
                                 <div className="border-[3px] rounded-lg border-black"></div>
                                 <BsBootstrap className="text-white text-4xl"/>
                                 <h1 className="text-white self-center font-semibold text-xl">

@@ -7,49 +7,35 @@ import ModalLogin from "../component/ModalLogin";
 
 function Sign_up (){
 
-    const [users, setUsers] = useState({
-        firstname: "",
-        lastname: "",
-        emai: "",
-        password: "",
-       
-    });
+    const [firstname, setFirstname]= useState("");
+    const [lastname, setLastname]= useState("");
+    const [email, setEmail]= useState("");
+    const [password, setPassword]= useState("");
 
     const [open, setOpen] = useState(false);
-
-
-    const handleInputChange = useCallback(({ target: { name, value } }) => {
-        setUsers((prevData) => ({ ...prevData, [name]: value }));
-      }, []);
 
       const handleSubmit = async (e) => {
         e.preventDefault();
     
-        try {
-            // Envoie les données du formulaire à l'API Strapi
-            const response = await Axios.post('https://auth-user-jqxd.onrender.com/api/list-users', {data: users});
-            console.log('Réponse de l\'API Strapi :', response.data);
-            setOpen(true);
-        } catch (error) {
-            if (error.response) {
-              // La requête a été effectuée, mais le serveur a renvoyé une erreur
-              console.error('Réponse du serveur avec erreur:', error.response.data);
-            } else if (error.request) {
-              // La requête n'a pas pu être effectuée
-              console.error('La requête n\'a pas pu être effectuée:', error.request);
-            } else {
-              // Une autre erreur s'est produite
-              console.error('Erreur lors de la requête:', error.message);
-            }
-          };
-
-          setUsers ({
-            firstname : '',
-            lastname : '',
-            email : '',
-            password : '',
-          });
-      };
+        Axios
+      .post('http://localhost:1337/api/auth/local/register', {
+        username: "hance_cruz",
+        firstname: firstname,
+        lastname : lastname,
+        email: email,
+        password: password,
+      })
+      .then(response => {
+       // Handle success.
+       setOpen(true);
+        console.log('Well done!');
+        console.log('User profile', response.data.user);
+        console.log('User token', response.data.jwt);
+      })
+      .catch(error => {
+        console.log('An error occurred:', error.response);
+      });
+    };
 
 
     return (
@@ -77,8 +63,8 @@ function Sign_up (){
                                 Nom complet
                             </label>
                             <div className="flex gap-x-6">
-                                <input type="text" className="bg-[#e5e7eb] h-[50px] w-1/2 rounded-lg  pl-6 placeholder:text-black" placeholder="NOM" name="lastname" onChange={handleInputChange} value={users.lastname}/>
-                                <input type="text" className="bg-[#e5e7eb] h-[50px]  w-1/2 rounded-lg pl-6 placeholder:text-black" placeholder="PRENOM" name="firstname" onChange={handleInputChange} value={users.firstname}/>
+                                <input type="text" className="bg-[#e5e7eb] h-[50px] w-1/2 rounded-lg  pl-6 placeholder:text-black" placeholder="NOM" name="lastname" onChange={(e) => setLastname(e.target.value)} value={lastname}/>
+                                <input type="text" className="bg-[#e5e7eb] h-[50px]  w-1/2 rounded-lg pl-6 placeholder:text-black" placeholder="PRENOM" name="firstname" onChange={(e) => setFirstname(e.target.value)} value={firstname}/>
                             </div>
                         </div>
 
@@ -86,14 +72,14 @@ function Sign_up (){
                             <label className="font-bold">
                                 Email
                             </label>
-                            <input type="email" className="bg-[#e5e7eb] h-[50px] rounded-lg pl-6 placeholder:text-black" placeholder="aurelius@rocketmail.com" name="email" onChange={handleInputChange} value={users.email}/>
+                            <input type="email" className="bg-[#e5e7eb] h-[50px] rounded-lg pl-6 placeholder:text-black" placeholder="aurelius@rocketmail.com" name="email" onChange={(e) => setEmail(e.target.value)} value={email}/>
                         </div>
 
                         <div className="flex flex-col gap-y-2">
                             <label className="font-bold">
                                 Mot de passe
                             </label>
-                            <input type="password" className="bg-[#e5e7eb] h-[50px] rounded-lg pl-6 placeholder:text-6xl placeholder:font-blod placeholder:text-black" placeholder=".................." name="password" onChange={handleInputChange} value={users.password}/>
+                            <input type="password" className="bg-[#e5e7eb] h-[50px] rounded-lg pl-6 placeholder:text-6xl placeholder:font-blod placeholder:text-black" placeholder=".................." name="password" onChange={(e) => setPassword(e.target.value)} value={password}/>
                         </div>
 
                         <p>
